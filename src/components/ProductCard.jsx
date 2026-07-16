@@ -1,25 +1,6 @@
 import { useState } from "react";
+import { Heart } from "lucide-react";
 import productShoe from "../assets/img/product-shoe.png";
-
-function HeartIcon({ filled, className }) {
-  return (
-    <svg
-      viewBox="0 0 25 25"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-    >
-      <path
-        d="M11.9219 21.6249L3.725 13.0895C1.41666 10.6853 1.5625 6.74365 4.04166 4.53115C6.50104 2.33636 10.2302 2.7624 12.174 5.46136L12.501 5.91449L12.8281 5.46136C14.7719 2.7624 18.501 2.33636 20.9604 4.53115C23.4396 6.74469 23.5854 10.6874 21.276 13.0905L13.0781 21.627C13.0038 21.7056 12.9143 21.7682 12.815 21.811C12.7157 21.8538 12.6087 21.8758 12.5005 21.8758C12.3924 21.8758 12.2854 21.8538 12.1861 21.811C12.0867 21.7682 11.9972 21.7056 11.9229 21.627L11.9219 21.6249Z"
-        fill={filled ? "#C8102E" : "none"}
-        stroke={filled ? "#C8102E" : "#555555"}
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
 
 const DEFAULT_PRODUCT = {
   discount: "-20%",
@@ -56,7 +37,12 @@ function ProductCard({ product = DEFAULT_PRODUCT, compact = false }) {
             onClick={handleFavoriteClick}
             className="absolute right-4 top-2 grid h-[19px] w-[19px] place-items-center rounded-full bg-white"
           >
-            <HeartIcon filled={favorited} className="h-3 w-3" />
+            <Heart
+              className="h-3 w-3"
+              fill={favorited ? "#C8102E" : "none"}
+              stroke={favorited ? "#C8102E" : "#555555"}
+              strokeWidth={2}
+            />
           </button>
 
           <img
@@ -123,7 +109,12 @@ function ProductCard({ product = DEFAULT_PRODUCT, compact = false }) {
           onClick={handleFavoriteClick}
           className="absolute right-2 top-2 grid h-[25px] w-[25px] place-items-center rounded-full bg-white"
         >
-          <HeartIcon filled={favorited} className="h-4 w-4" />
+          <Heart
+            className="h-4 w-4"
+            fill={favorited ? "#C8102E" : "none"}
+            stroke={favorited ? "#C8102E" : "#555555"}
+            strokeWidth={2}
+          />
         </button>
         <img
           src={p.image}
