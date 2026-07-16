@@ -4,7 +4,7 @@ import iconCart from "../assets/icons/icon-cart.svg";
 
 function Header() {
   return (
-    <header className="fixed inset-x-0 top-0 z-30 mx-auto flex max-w-md items-center justify-between bg-white px-4 py-5 backdrop-blur-md border-b border-hairline">
+    <header className="fixed inset-x-0 top-0 z-30 mx-auto flex w-full items-center justify-between bg-white px-4 py-5 backdrop-blur-md border-b border-hairline">
       <button
         type="button"
         aria-label="Buscar"

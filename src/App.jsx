@@ -12,7 +12,7 @@ import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div className="mx-auto min-h-screen max-w-md bg-page pb-24 shadow-xl">
+    <div className="mx-auto min-h-screen w-full bg-page pb-24">
       <Header />
       <h1 className="sr-only">
         Di Santinni — Tênis, chinelos e calçados esportivos
