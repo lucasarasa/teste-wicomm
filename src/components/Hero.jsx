@@ -20,7 +20,7 @@ function Hero() {
               20% OFF
             </span>
           </div>
-          <span className="self-start text-[55px] font-black leading-9.25 tracking-wide text-cream">
+          <span className="self-start whitespace-nowrap text-[55px] font-black leading-9.25 tracking-wide text-cream">
             R$ 350,00
           </span>
         </div>
