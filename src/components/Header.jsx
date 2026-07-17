@@ -17,7 +17,7 @@ function Header() {
   };
 
   return (
-    <header className="border-hairline fixed inset-x-0 top-0 z-30 mx-auto flex w-full items-center justify-between border-b bg-white px-4 py-5 backdrop-blur-md">
+    <header className="border-hairline fixed inset-x-0 top-0 z-30 mx-auto flex w-full items-center justify-between border-b bg-white px-4 py-5">
       <button
         type="button"
         aria-label="Buscar"
