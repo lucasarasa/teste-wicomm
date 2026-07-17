@@ -26,14 +26,14 @@ function CategoryTabs() {
   const [active, setActive] = useState(TABS[0]);
 
   return (
-    <section className="py-5">
-      <div className="no-scrollbar flex overflow-x-auto px-4">
+    <section className="w-full py-5">
+      <div className="no-scrollbar flex w-full overflow-x-auto px-4">
         {TABS.map((tab) => (
           <button
             key={tab}
             type="button"
             onClick={() => setActive(tab)}
-            className={`relative shrink-0 px-3 pb-2 text-base font-semibold transition-colors after:absolute after:bottom-0 after:left-0 after:h-0.75 after:w-full first:pl-0 ${
+            className={`relative shrink-0 px-3 pb-2 text-base font-semibold transition-colors after:absolute after:bottom-0 after:left-0 after:h-0.75 after:w-full first:pl-0 sm:px-3.5 sm:text-lg md:px-4 md:text-xl ${
               active === tab
                 ? "text-brand-red after:bg-brand-red"
                 : "text-ink-soft after:bg-hairline"
@@ -44,7 +44,7 @@ function CategoryTabs() {
         ))}
       </div>
 
-      <Carousel opts={{ align: "start" }} className="mt-6 px-4">
+      <Carousel opts={{ align: "start" }} className="mt-6 w-full px-4">
         <CarouselContent className="-ml-3.5">
           <CarouselItem className="basis-auto pl-3.5">
             <ProductCard compact />

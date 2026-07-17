@@ -45,9 +45,9 @@ function ProductCard({ product = DEFAULT_PRODUCT, compact = false }) {
       <>
         <article
           onClick={() => setModalOpen(true)}
-          className="bg-cream my-1 flex w-[169px] shrink-0 cursor-pointer flex-col overflow-hidden rounded-3xl shadow-[0_3px_15px_rgba(0,0,0,0.07)]"
+          className="bg-cream my-1 flex w-42.25 shrink-0 cursor-pointer flex-col overflow-hidden rounded-3xl shadow-[0_3px_15px_rgba(0,0,0,0.07)] sm:w-48 md:w-52"
         >
-          <div className="relative h-[156px] w-full shrink-0 bg-[#F6F6F6]">
+          <div className="relative h-39 w-full shrink-0 bg-[#F6F6F6] sm:h-44 md:h-48">
             <span className="bg-brand-red text-cream absolute top-2 left-4 rounded-full px-3 py-0.5 text-[10px] font-semibold">
               {p.discount}
             </span>
@@ -123,9 +123,9 @@ function ProductCard({ product = DEFAULT_PRODUCT, compact = false }) {
     <>
       <article
         onClick={() => setModalOpen(true)}
-        className="bg-cream flex w-56 shrink-0 cursor-pointer flex-col items-center gap-3 overflow-hidden rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.05)]"
+        className="bg-cream flex w-56 shrink-0 cursor-pointer flex-col items-center gap-3 overflow-hidden rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] sm:w-60 md:w-64"
       >
-        <div className="bg-surface-soft relative h-[207px] w-full shrink-0 rounded-t-3xl">
+        <div className="bg-surface-soft relative h-51.75 w-full shrink-0 rounded-t-3xl sm:h-56 md:h-60">
           <span className="bg-brand-red text-cream absolute top-3 left-3 rounded-full px-2.5 py-1 text-[10px] leading-[10px] font-semibold">
             {p.discount}
           </span>

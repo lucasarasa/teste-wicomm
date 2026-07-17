@@ -31,7 +31,7 @@ function NossasMarcas() {
             key={brand}
             type="button"
             onClick={() => setActive(brand)}
-            className={`relative shrink-0 px-3 pb-2 text-base leading-6 font-semibold transition-colors first:pl-0 ${
+            className={`relative shrink-0 px-3 pb-2 text-base leading-6 font-semibold transition-colors first:pl-0 sm:px-3.5 sm:text-lg md:px-4 md:text-xl ${
               active === brand
                 ? "text-cream after:bg-black"
                 : "text-ink-soft after:bg-white"
