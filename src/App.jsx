@@ -1,14 +1,14 @@
+import BenefitsBar from "./components/BenefitsBar";
+import BigBanner from "./components/BigBanner";
+import CategoryTabs from "./components/CategoryTabs";
+import CompreTamanho from "./components/CompreTamanho";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import BenefitsBar from "./components/BenefitsBar";
-import NossosProdutos from "./components/NossosProdutos";
-import CompreTamanho from "./components/CompreTamanho";
-import StyleTiles from "./components/StyleTiles";
-import CategoryTabs from "./components/CategoryTabs";
-import NossasMarcas from "./components/NossasMarcas";
-import BigBanner from "./components/BigBanner";
-import Novidades from "./components/Novidades";
 import NavBar from "./components/NavBar";
+import NossasMarcas from "./components/NossasMarcas";
+import NossosProdutos from "./components/NossosProdutos";
+import Novidades from "./components/Novidades";
+import StyleTiles from "./components/StyleTiles";
 
 function App() {
   return (

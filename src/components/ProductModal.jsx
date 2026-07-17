@@ -1,5 +1,5 @@
-import { createPortal } from "react-dom";
 import { X } from "lucide-react";
+import { createPortal } from "react-dom";
 
 function ProductModal({ product, onClose, onAddToCart }) {
   return createPortal(

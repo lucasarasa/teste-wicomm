@@ -2,9 +2,10 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
   CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
+
 import categoria1 from "../assets/img/categoria-1.png";
 import categoria2 from "../assets/img/categoria-2.png";
 import categoria3 from "../assets/img/categoria-3.png";

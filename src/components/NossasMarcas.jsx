@@ -1,13 +1,15 @@
 import { useState } from "react";
+
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
   CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
-import ProductCard from "./ProductCard";
+
 import marcasBanner from "../assets/img/marcas-banner.png";
+import ProductCard from "./ProductCard";
 
 const BRANDS = ["MIZUNO", "ADIDAS", "OLYMPIKUS", "FILA", "KENNER", "REDLEY"];
 

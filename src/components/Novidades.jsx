@@ -2,9 +2,10 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
   CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
+
 import ProductCard from "./ProductCard";
 
 const arrowClassName =
