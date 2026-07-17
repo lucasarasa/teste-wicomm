@@ -26,7 +26,7 @@ function CategoryTabs() {
   const [active, setActive] = useState(TABS[0]);
 
   return (
-    <section className="w-full py-5">
+    <section id="categorias" className="w-full scroll-mt-18 py-5">
       <div className="no-scrollbar flex w-full overflow-x-auto px-4">
         {TABS.map((tab) => (
           <button

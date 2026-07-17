@@ -20,7 +20,10 @@ function NossasMarcas() {
   const [active, setActive] = useState(BRANDS[0]);
 
   return (
-    <section className="from-brand-maroon to-brand-red bg-linear-to-b px-4 py-8">
+    <section
+      id="nossas-marcas"
+      className="from-brand-maroon to-brand-red scroll-mt-18 bg-linear-to-b px-4 py-8"
+    >
       <h2 className="text-cream mb-5 text-2xl leading-7 font-semibold tracking-wide">
         NOSSAS MARCAS
       </h2>

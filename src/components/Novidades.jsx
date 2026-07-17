@@ -13,7 +13,7 @@ const arrowClassName =
 
 function Novidades() {
   return (
-    <section className="py-5">
+    <section id="novidades" className="scroll-mt-18 py-5">
       <h2 className="text-ink mb-4 px-4 text-xl leading-6 font-semibold tracking-wide">
         NOVIDADES
       </h2>
