@@ -13,7 +13,7 @@ function formatPrice(value) {
 }
 
 function CartDrawer({ onClose }) {
-  const { items, increment, decrement } = useCart();
+  const { items, increment, decrement, clearCart } = useCart();
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -107,11 +107,21 @@ function CartDrawer({ onClose }) {
         )}
 
         {items.length > 0 && (
-          <div className="border-hairline mt-4 flex items-center justify-between border-t pt-4 text-sm">
-            <span className="text-muted">Subtotal</span>
-            <span className="text-ink font-semibold">
-              {formatPrice(subtotal)}
-            </span>
+          <div className="border-hairline mt-4 border-t pt-4">
+            <div className="flex items-center justify-between text-sm">
+              <span className="text-muted">Subtotal</span>
+              <span className="text-ink font-semibold">
+                {formatPrice(subtotal)}
+              </span>
+            </div>
+
+            <button
+              type="button"
+              onClick={clearCart}
+              className="bg-brand-red mt-4 w-full rounded-full py-3.5 text-sm font-bold text-white"
+            >
+              FINALIZAR COMPRA
+            </button>
           </div>
         )}
       </div>
