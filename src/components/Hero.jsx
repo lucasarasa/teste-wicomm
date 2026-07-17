@@ -6,9 +6,9 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 
-import bigBanner from "../assets/img/big-banner.png";
-import heroImg from "../assets/img/hero.png";
-import marcasBanner from "../assets/img/marcas-banner.png";
+import bigBanner from "../assets/img/big-banner.webp";
+import heroImg from "../assets/img/hero.webp";
+import marcasBanner from "../assets/img/marcas-banner.webp";
 
 const SLIDES = [
   {

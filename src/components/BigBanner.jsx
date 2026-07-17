@@ -1,4 +1,4 @@
-import bigBanner from "../assets/img/big-banner.png";
+import bigBanner from "../assets/img/big-banner.webp";
 
 function BigBanner() {
   return (

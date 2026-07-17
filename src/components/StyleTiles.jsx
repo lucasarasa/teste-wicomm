@@ -7,9 +7,9 @@ import {
 import logoConverse from "../assets/icons/logo-converse.svg";
 import logoOlympikus from "../assets/icons/logo-olympikus.svg";
 import kennerSandalsLogo from "../assets/img/kenner-sandals-logo.png";
-import tileConverse from "../assets/img/tile-converse.png";
-import tileKenner from "../assets/img/tile-kenner.png";
-import tileOlympikus from "../assets/img/tile-olympikus.png";
+import tileConverse from "../assets/img/tile-converse.webp";
+import tileKenner from "../assets/img/tile-kenner.webp";
+import tileOlympikus from "../assets/img/tile-olympikus.webp";
 
 const TILES = [
   {

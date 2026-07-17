@@ -6,12 +6,12 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import categoria1 from "../assets/img/categoria-1.png";
-import categoria2 from "../assets/img/categoria-2.png";
-import categoria3 from "../assets/img/categoria-3.png";
-import categoria4 from "../assets/img/categoria-4.png";
-import categoria5 from "../assets/img/categoria-5.png";
-import categoria6 from "../assets/img/categoria-6.png";
+import categoria1 from "../assets/img/categoria-1.webp";
+import categoria2 from "../assets/img/categoria-2.webp";
+import categoria3 from "../assets/img/categoria-3.webp";
+import categoria4 from "../assets/img/categoria-4.webp";
+import categoria5 from "../assets/img/categoria-5.webp";
+import categoria6 from "../assets/img/categoria-6.webp";
 
 const CATEGORIES = [
   { label: "chinelos", image: categoria1 },

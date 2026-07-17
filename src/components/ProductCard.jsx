@@ -1,7 +1,7 @@
 import { Heart } from "lucide-react";
 import { useState } from "react";
 
-import productShoe from "../assets/img/product-shoe.png";
+import productShoe from "../assets/img/product-shoe.webp";
 import { useCart } from "../context/CartContext.jsx";
 import ProductModal from "./ProductModal";
 

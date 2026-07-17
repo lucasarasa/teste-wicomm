@@ -8,7 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import marcasBanner from "../assets/img/marcas-banner.png";
+import marcasBanner from "../assets/img/marcas-banner.webp";
 import ProductCard from "./ProductCard";
 
 const BRANDS = ["MIZUNO", "ADIDAS", "OLYMPIKUS", "FILA", "KENNER", "REDLEY"];
