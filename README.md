@@ -17,11 +17,35 @@ Home mobile-first desenvolvida em React a partir do layout do Figma.
 - **Husky** + **lint-staged** — hook de `pre-commit` que roda ESLint e Prettier automaticamente nos arquivos staged antes de cada commit
 - **git-commit-msg-linter** — hook de `commit-msg` que valida o padrão [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`, `chore:`, etc.)
 
+## Performance
+
+As imagens foram redimensionadas para o tamanho real de exibição e convertidas para **WebP**, reduzindo o peso total dos assets de ~4.3MB para ~470KB — isso melhora o carregamento e evita travamento ao rolar os carrosséis no mobile.
+
+## Como rodar localmente
+
+```bash
+git clone https://github.com/lucasarasa/teste-wicomm.git
+cd teste-wicomm
+
+# com npm
+npm install
+npm run dev
+
+# ou com pnpm
+pnpm install
+pnpm dev
+```
+
+## Deploy
+
+Disponível em: https://teste-wicomm-omega.vercel.app
+
 ## Scripts
 
 ```bash
-npm run dev      # servidor de desenvolvimento
-npm run build    # build de produção
-npm run lint     # roda o ESLint
-npm run format   # roda o Prettier no projeto inteiro
+npm run dev       # servidor de desenvolvimento
+npm run build     # build de produção
+npm run lint      # roda o ESLint
+npm run lint:fix  # corrige problemas do ESLint e ordena os imports automaticamente
+npm run format    # roda o Prettier no projeto inteiro
 ```
