@@ -1,18 +1,27 @@
-# React + Vite
+# Di Santinni — Teste Prático WICOMM
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Home mobile-first desenvolvida em React a partir do layout do Figma.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** + **Vite**
+- **Tailwind CSS v4** — tema customizado (cores da marca, fonte Outfit) via `@theme`, sem `tailwind.config.js`
+- **shadcn/ui** — componente `Carousel` usado em todas as seções com scroll horizontal (Nossos Produtos, Compre por Tamanho, Nossas Marcas, Novidades, tabs de categoria)
+- **lucide-react** — ícones (setas do carrossel, coração de favoritar, ícones da nav bar)
+- **Context API** (React) — estado global do carrinho (`CartContext`), compartilhado entre o header e os cards de produto
 
-## React Compiler
+## Qualidade e padronização de código
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **ESLint** com `eslint-plugin-simple-import-sort` — ordena os imports automaticamente (bibliotecas externas, depois internos, depois assets)
+- **Prettier** com `prettier-plugin-tailwindcss` — ordena as classes do Tailwind na ordem recomendada, evitando inconsistência de estilo entre componentes
+- **Husky** + **lint-staged** — hook de `pre-commit` que roda ESLint e Prettier automaticamente nos arquivos staged antes de cada commit
+- **git-commit-msg-linter** — hook de `commit-msg` que valida o padrão [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`, `chore:`, etc.)
 
-## Expanding the ESLint configuration
+## Scripts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-# teste-wicomm
+```bash
+npm run dev      # servidor de desenvolvimento
+npm run build    # build de produção
+npm run lint     # roda o ESLint
+npm run format   # roda o Prettier no projeto inteiro
+```
