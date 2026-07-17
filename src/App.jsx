@@ -12,12 +12,12 @@ import StyleTiles from "./components/StyleTiles";
 
 function App() {
   return (
-    <div className="bg-page mx-auto min-h-screen w-full pb-24">
+    <div className="bg-page relative flex h-screen w-full flex-col overflow-hidden">
       <Header />
       <h1 className="sr-only">
         Di Santinni — Tênis, chinelos e calçados esportivos
       </h1>
-      <main>
+      <main className="-webkit-overflow-scrolling-touch flex-1 overflow-y-auto pb-[calc(5rem+env(safe-area-inset-bottom))]">
         <Hero />
         <BenefitsBar />
         <NossosProdutos />
