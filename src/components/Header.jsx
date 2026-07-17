@@ -12,6 +12,10 @@ function Header() {
   const [cartOpen, setCartOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <header className="border-hairline fixed inset-x-0 top-0 z-30 mx-auto flex w-full items-center justify-between border-b bg-white px-4 py-5 backdrop-blur-md">
       <button
@@ -23,7 +27,9 @@ function Header() {
         <img src={iconSearch} alt="" className="h-5 w-5" />
       </button>
 
-      <img src={dsLogo} alt="Di Santinni" className="h-6 object-contain" />
+      <button type="button" aria-label="Ir para o topo" onClick={scrollToTop}>
+        <img src={dsLogo} alt="Di Santinni" className="h-6 object-contain" />
+      </button>
 
       <button
         type="button"
