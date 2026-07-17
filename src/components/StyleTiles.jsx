@@ -1,4 +1,8 @@
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 import tileConverse from "../assets/img/tile-converse.png";
 import tileOlympikus from "../assets/img/tile-olympikus.png";
 import tileKenner from "../assets/img/tile-kenner.png";

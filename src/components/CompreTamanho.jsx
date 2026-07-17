@@ -17,7 +17,7 @@ function CompreTamanho() {
 
   return (
     <section className="py-5">
-      <h2 className="mb-4 px-4 text-xl font-semibold leading-6 tracking-wide text-ink">
+      <h2 className="text-ink mb-4 px-4 text-xl leading-6 font-semibold tracking-wide">
         COMPRE POR TAMANHO
       </h2>
 
@@ -31,7 +31,7 @@ function CompreTamanho() {
                   type="button"
                   onClick={() => setSelected(size)}
                   aria-pressed={isSelected}
-                  className={`grid h-15 w-15 mx-auto place-items-center rounded-full border-[1.7px] border-brand-red text-xl font-semibold leading-6 tracking-wide transition-colors ${
+                  className={`border-brand-red mx-auto grid h-15 w-15 place-items-center rounded-full border-[1.7px] text-xl leading-6 font-semibold tracking-wide transition-colors ${
                     isSelected
                       ? "bg-brand-red text-cream"
                       : "text-brand-red-dark"

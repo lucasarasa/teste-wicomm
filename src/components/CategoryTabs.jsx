@@ -31,7 +31,7 @@ function CategoryTabs() {
             key={tab}
             type="button"
             onClick={() => setActive(tab)}
-            className={`relative shrink-0 px-3 pb-2 text-base font-semibold transition-colors first:pl-0 after:absolute after:bottom-0 after:left-0 after:h-0.75 after:w-full ${
+            className={`relative shrink-0 px-3 pb-2 text-base font-semibold transition-colors after:absolute after:bottom-0 after:left-0 after:h-0.75 after:w-full first:pl-0 ${
               active === tab
                 ? "text-brand-red after:bg-brand-red"
                 : "text-ink-soft after:bg-hairline"

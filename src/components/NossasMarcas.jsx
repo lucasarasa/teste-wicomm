@@ -18,8 +18,8 @@ function NossasMarcas() {
   const [active, setActive] = useState(BRANDS[0]);
 
   return (
-    <section className="bg-linear-to-b from-brand-maroon to-brand-red px-4 py-8">
-      <h2 className="mb-5 text-2xl font-semibold leading-7 tracking-wide text-cream">
+    <section className="from-brand-maroon to-brand-red bg-linear-to-b px-4 py-8">
+      <h2 className="text-cream mb-5 text-2xl leading-7 font-semibold tracking-wide">
         NOSSAS MARCAS
       </h2>
 
@@ -29,7 +29,7 @@ function NossasMarcas() {
             key={brand}
             type="button"
             onClick={() => setActive(brand)}
-            className={`relative shrink-0 px-3 pb-2 text-base font-semibold leading-6 transition-colors first:pl-0 ${
+            className={`relative shrink-0 px-3 pb-2 text-base leading-6 font-semibold transition-colors first:pl-0 ${
               active === brand
                 ? "text-cream after:bg-black"
                 : "text-ink-soft after:bg-white"

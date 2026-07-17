@@ -13,14 +13,14 @@ function Hero() {
       <div className="absolute inset-x-0 bottom-9 flex flex-col gap-5 px-12">
         <div className="flex flex-col items-start gap-2">
           <div className="flex items-center gap-2">
-            <span className="text-lg leading-4.5 tracking-wide text-cream/90 line-through">
+            <span className="text-cream/90 text-lg leading-4.5 tracking-wide line-through">
               R$ 799,00
             </span>
-            <span className="rounded-full bg-brand-red px-2.5 text-[11px] font-semibold leading-5.25 text-cream">
+            <span className="bg-brand-red text-cream rounded-full px-2.5 text-[11px] leading-5.25 font-semibold">
               20% OFF
             </span>
           </div>
-          <span className="self-start whitespace-nowrap text-[55px] font-black leading-9.25 tracking-wide text-cream">
+          <span className="text-cream self-start text-[55px] leading-9.25 font-black tracking-wide whitespace-nowrap">
             R$ 350,00
           </span>
         </div>
@@ -28,14 +28,14 @@ function Hero() {
         <div className="flex justify-center">
           <button
             type="button"
-            className="rounded-full bg-brand-red px-7 py-2 text-sm font-semibold leading-5 text-cream"
+            className="bg-brand-red text-cream rounded-full px-7 py-2 text-sm leading-5 font-semibold"
           >
             CONFIRA
           </button>
         </div>
 
         <div className="flex justify-center gap-2.5">
-          <span className="h-2 w-2 rounded-full bg-brand-red" />
+          <span className="bg-brand-red h-2 w-2 rounded-full" />
           <span className="h-2 w-2 rounded-full bg-white" />
           <span className="h-2 w-2 rounded-full bg-white" />
         </div>

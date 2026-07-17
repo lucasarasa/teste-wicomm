@@ -27,7 +27,7 @@ const arrowClassName =
 function NossosProdutos() {
   return (
     <section className="py-5">
-      <h2 className="mb-4 px-4 text-xl font-semibold leading-6 tracking-wide text-ink">
+      <h2 className="text-ink mb-4 px-4 text-xl leading-6 font-semibold tracking-wide">
         NOSSOS PRODUTOS
       </h2>
 
@@ -43,7 +43,7 @@ function NossosProdutos() {
                 />
                 <button
                   type="button"
-                  className="relative items-start mb-3 rounded-full bg-cream px-4 py-2 text-sm font-semibold leading-4.5 text-brand-red"
+                  className="bg-cream text-brand-red relative mb-3 items-start rounded-full px-4 py-2 text-sm leading-4.5 font-semibold"
                 >
                   {cat.label}
                 </button>

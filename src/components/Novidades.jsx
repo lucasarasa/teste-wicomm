@@ -13,7 +13,7 @@ const arrowClassName =
 function Novidades() {
   return (
     <section className="py-5">
-      <h2 className="mb-4 px-4 text-xl font-semibold leading-6 tracking-wide text-ink">
+      <h2 className="text-ink mb-4 px-4 text-xl leading-6 font-semibold tracking-wide">
         NOVIDADES
       </h2>
 

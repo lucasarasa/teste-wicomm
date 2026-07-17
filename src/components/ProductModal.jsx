@@ -1,4 +1,5 @@
 import { createPortal } from "react-dom";
+import { X } from "lucide-react";
 
 function ProductModal({ product, onClose, onAddToCart }) {
   return createPortal(
@@ -7,37 +8,38 @@ function ProductModal({ product, onClose, onAddToCart }) {
       onClick={onClose}
     >
       <div
-        className="w-full rounded-t-3xl bg-cream p-5 sm:rounded-3xl"
+        className="bg-cream w-full rounded-t-3xl p-5 sm:rounded-3xl"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="mb-2 flex justify-end">
           <button
             type="button"
             onClick={onClose}
-            className="text-xl text-muted-dark"
+            className="text-muted-dark"
+            aria-label="Fechar"
           >
-            X
+            <X className="h-5 w-5" />
           </button>
         </div>
 
-        <div className="flex items-center justify-center rounded-2xl bg-white p-6  w-full">
+        <div className="flex w-full items-center justify-center rounded-2xl bg-white p-6">
           <img src={product.image} alt={product.name} className="h-60 w-auto" />
         </div>
 
         <div className="mt-4 flex flex-col gap-1">
-          <p className="text-xs text-muted">{product.brand}</p>
-          <p className="text-lg text-ink">{product.name}</p>
-          <p className="mt-2 text-xs font-semibold text-muted line-through">
+          <p className="text-muted text-xs">{product.brand}</p>
+          <p className="text-ink text-lg">{product.name}</p>
+          <p className="text-muted mt-2 text-xs font-semibold line-through">
             {product.oldPrice}
           </p>
-          <p className="text-2xl font-semibold text-brand-red">
+          <p className="text-brand-red text-2xl font-semibold">
             {product.price}
           </p>
-          <p className="mt-1 text-xs text-muted">
+          <p className="text-muted mt-1 text-xs">
             <span className="text-[#C89B2A]">{product.clubPrice} </span>
             no Clube
           </p>
-          <p className="text-xs text-muted">
+          <p className="text-muted text-xs">
             ou <span className="font-bold">{product.installments}</span> sem
             juros
           </p>
@@ -49,13 +51,13 @@ function ProductModal({ product, onClose, onAddToCart }) {
             onAddToCart(product);
             onClose();
           }}
-          className="mt-5 w-full rounded-full bg-brand-red py-3.5 text-sm font-bold leading-[18px] text-white"
+          className="bg-brand-red mt-5 w-full rounded-full py-3.5 text-sm leading-[18px] font-bold text-white"
         >
           ADICIONAR AO CARRINHO
         </button>
       </div>
     </div>,
-    document.body
+    document.body,
   );
 }
 
